@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SICAPIN</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="onbj1">Kamera Ajaib</string>
+    <string name="onbd1">Belajar sambil bermain \n dengan teknologi AR</string>
+    <string name="onbj2">Artikel Pembelajaran</string>
+    <string name="onbd2">Video pembelajaran dari segala \n materi pelajaran</string>
+    <string name="onbj3">Quiz</string>
+    <string name="onbd3">Ajak temanmu untuk adu quiz \n dan belajar bersama</string>
+</resources>

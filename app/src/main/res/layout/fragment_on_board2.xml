@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".Fragmen.onBoard1">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <!--  Image OnBoard1  -->
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="239dp"
+        android:layout_height="249dp"
+        android:src="@drawable/onboard2"/>
+
+    <!--  EndImage OnBoard1  -->
+
+    <!--  Text View  -->
+
+    <TextView
+        android:gravity="center"
+        android:fontFamily="@font/nunitbold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/primary"
+        android:textSize="27dp"
+        android:text="@string/onbj2"/>
+
+    <TextView
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:fontFamily="@font/nunitolight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/primary"
+        android:textSize="14dp"
+        android:text="@string/onbd2"/>
+
+    <!--  End Text View  -->
+
+
+    <!--  Pages  -->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginTop="90dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dotnon"/>
+
+        <ImageView
+            android:paddingLeft="7dp"
+            android:layout_marginTop="90dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dotaktif"/>
+
+        <ImageView
+            android:paddingLeft="7dp"
+            android:layout_marginTop="90dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dotnon"/>
+
+    </LinearLayout>
+
+    <!--  EndPages  -->
+
+
+
+</LinearLayout>
