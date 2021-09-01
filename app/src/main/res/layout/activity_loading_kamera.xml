@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".Activity.loadingKamera">
+
+    <ImageView
+        android:src="@drawable/loadingkamera"
+        android:layout_width="284dp"
+        android:layout_height="272dp"/>
+
+    <TextView
+        android:layout_marginTop="26dp"
+        android:textSize="16dp"
+        android:textColor="@color/primary"
+        android:text="Tunggu ya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunitbold"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:textSize="16dp"
+        android:textColor="#4D4D4D"
+        android:text="Sedang menyiapkan kameramu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunitolight"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SICAPIN</string>
+    <string name="app_name">SiCapin</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="onbj1">Kamera Ajaib</string>
@@ -8,4 +8,19 @@
     <string name="onbd2">Video pembelajaran dari segala \n materi pelajaran</string>
     <string name="onbj3">Quiz</string>
     <string name="onbd3">Ajak temanmu untuk adu quiz \n dan belajar bersama</string>
+    <string name="tv1">Mau Belajar Apa hari Ini ?</string>
+    <string name="mtk">Matematika</string>
+    <string name="pkn">Pendidikan Kewarganegaraan</string>
+    <string name="ips">Ilmu Pengetahuan Sosial</string>
+    <string name="ipa">Ilmu Pengetahuan Alam</string>
+    <string name="seni_bidaya">Seni Bidaya</string>
+    <string name="bahasa_indonesi">Bahasa Indonesi</string>
+    <string name="title_activity_bottom_nav">BottomNav</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="kelas_3">kelas 3</string>
+    <string name="kelas_1">kelas 1</string>
+    <string name="kelas_2">kelas 2</string>
+    <string name="poinmu">Poinmu</string>
 </resources>

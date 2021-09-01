@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:padding="20dp"
+    tools:context=".Fragmen.profile">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!--Container-->
+    <LinearLayout
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!--  HeaderProfile  -->
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!--   FotoProfile     -->
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="4dp"
+                app:cardCornerRadius="100dp"
+                android:id="@+id/fotoprofile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/border_circle_avatar"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/avatarprofil"/>
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <!--    EndFotoProfile    -->
+
+            <!--    Text    -->
+            <LinearLayout
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="16dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvusername"
+                    android:text="Wang Jarim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/nunitbold"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary"/>
+
+                <LinearLayout
+                    android:layout_marginTop="9dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/kelas"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"/>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:fontFamily="@font/nunitolight"
+                        android:textColor="@color/primary"
+                        android:textSize="13dp"
+                        android:text="@string/kelas_1"
+                        android:id="@+id/tvkelas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--    EndText    -->
+
+            <!--    EditProfile    -->
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="5dp"
+                android:layout_marginLeft="125dp"
+                android:layout_gravity="center"
+                android:id="@+id/editProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="@drawable/btn_edit_profile"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="77dp"
+                    android:layout_height="30dp">
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@drawable/cardeditprofile"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Edit Profile"
+                        android:fontFamily="@font/nunitolight"
+                        android:textColor="@color/white"
+                        android:textSize="10dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--    EndEditProfile    -->
+
+        </LinearLayout>
+
+        <!--  EndHeaderProfile  -->
+
+        <!--  Mid  -->
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="32dp"
+            android:layout_gravity="center"
+            android:id="@+id/midprofil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="@color/bg_card_profile"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="308dp"
+                android:layout_height="71dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <!--        Point        -->
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="125"
+                            android:textSize="20dp"
+                            android:id="@+id/tvpoint"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nunitosemibold"/>
+
+                        <LinearLayout
+                            android:layout_marginTop="6dp"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_marginRight="3dp"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/ponit"/>
+
+                            <TextView
+                                android:fontFamily="@font/nunitolight"
+                                android:textStyle="bold"
+                                android:textColor="@color/primary"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Point"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <!--        EndPoint        -->
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!--  EndMid  -->
+
+        <!--  MidInformasi Akun  -->
+
+        <androidx.cardview.widget.CardView
+            android:layout_gravity="center"
+            android:layout_marginTop="26dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="@color/bg_card_profile"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="308dp"
+                android:layout_height="251dp">
+
+                <TextView
+                    android:fontFamily="@font/nunitoregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primary"
+                    android:text="Informasi Akun"/>
+
+                <View
+                    android:layout_marginTop="8dp"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"/>
+
+                <!--    UserName     -->
+
+                <LinearLayout
+                    android:layout_marginTop="18dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginRight="150dp"
+                        android:text="Username\t"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunitoregular"
+                        android:textStyle="bold"
+                        android:textSize="11dp"/>
+
+                    <TextView
+                        android:id="@+id/tvdatausername"
+                        android:text="Wang Jarim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunitoregular"
+                        android:textSize="11dp"/>
+
+                </LinearLayout>
+                <!--    EndUserName  -->
+
+                <!--    PasswordUser        -->
+                <LinearLayout
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginRight="150dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunitoregular"
+                        android:text="Password\t\t"
+                        android:textSize="11dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvdatapass"
+                        android:text="********"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunitoregular"
+                        android:textSize="11dp"/>
+
+                </LinearLayout>
+                <!--    EndPasswordUser        -->
+
+                <!--    InformasiPengguna        -->
+
+                <TextView
+                    android:layout_marginTop="19dp"
+                    android:fontFamily="@font/nunitoregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primary"
+                    android:text="Informasi Pengguna"/>
+
+                <View
+                    android:layout_marginTop="8dp"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"/>
+
+                <!--    EndInformasiPengguna        -->
+
+                <!--    NamaDepan        -->
+
+                <LinearLayout
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginRight="130dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunitoregular"
+                        android:text="Nama depan\t\t\t"
+                        android:textSize="11dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvdatanamadep"
+                        android:text="Wang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunitoregular"
+                        android:textSize="11dp"/>
+
+                </LinearLayout>
+
+                <!--    EndNamaDepan       -->
+
+                <!--    NamaBelakang        -->
+                <LinearLayout
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginRight="130dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunitoregular"
+                        android:text="Nama Belakang\t"
+                        android:textSize="11dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvdatanamabel"
+                        android:text="Jarim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunitoregular"
+                        android:textSize="11dp"/>
+
+                </LinearLayout>
+                <!--    EndNamaBelakang        -->
+
+                <!--    Email        -->
+
+                <LinearLayout
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginRight="130dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunitoregular"
+                        android:text="Email\t\t\t\t\t\t\t"
+                        android:textSize="11dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvdataemail"
+                        android:text="Jarim@gmail.com"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunitoregular"
+                        android:textSize="11dp"/>
+
+                </LinearLayout>
+                <!--    EndEmail        -->
+
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <!--  MidEndInformasi Akun  -->
+
+
+        <!--  Button Keluar  -->
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:backgroundTint="#C84D2B"
+                android:fontFamily="@font/nunitosemibold"
+                android:textStyle="bold"
+                android:text="Keluar"
+                android:textSize="16dp"
+                android:textAllCaps="false"
+                android:id="@+id/btnKeluar"
+                android:layout_width="308dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <!--  ButtonKeluar  -->
+
+    </LinearLayout>
+    <!--  EndContainer  -->
+
+</LinearLayout>

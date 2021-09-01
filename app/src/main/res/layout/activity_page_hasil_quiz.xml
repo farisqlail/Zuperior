@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".Activity.PageHasilQuiz">
+
+    <ImageView
+        android:layout_width="384dp"
+        android:layout_height="270dp"
+        android:src="@drawable/hasilkuis"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="18dp"
+            android:textColor="@color/primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunitosemibold"
+            android:textStyle="bold"
+            android:text="Selamat "
+            android:textSize="16dp"/>
+        <TextView
+            android:id="@+id/hsilquser"
+            android:layout_marginTop="18dp"
+            android:textColor="@color/primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunitosemibold"
+            android:textStyle="bold"
+            android:text="Wang Jarim"
+            android:textSize="16dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primary"
+        android:text="Kumpulkan poin dan tukarkan poinmu"
+        android:fontFamily="@font/nunitolight"
+        android:textSize="12dp"/>
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:textColor="@color/primary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunitosemibold"
+        android:textStyle="bold"
+        android:text="@string/poinmu"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textColor="@color/fontpoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunitosemibold"
+        android:textStyle="bold"
+        android:text="10"
+        android:textSize="22dp"/>
+
+    <Button
+        android:fontFamily="@font/nunitosemibold"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="38dp"
+        android:backgroundTint="#C84D2B"
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:text="Selesai"
+        android:textAllCaps="false"/>
+
+</LinearLayout>

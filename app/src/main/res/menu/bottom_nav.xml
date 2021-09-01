@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mberanda"
+        android:icon="@drawable/beranda"
+        android:title="Beranda" />
+
+    <item
+        android:id="@+id/martikel"
+        android:icon="@drawable/baca"
+        android:title="Artikel Belajar" />
+
+    <item
+        android:id="@+id/mkamera"
+        android:icon="@drawable/ar"
+        android:title="Kamera Ajaib" />
+
+    <item
+        android:id="@+id/mquiz"
+        android:icon="@drawable/quiznav"
+        android:title="Quiz" />
+
+    <item
+        android:id="@+id/mprofile"
+        android:icon="@drawable/profilenav"
+        android:title="Profile" />
+
+</menu>

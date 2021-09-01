@@ -12,4 +12,7 @@
     <color name="secondary">#4D4D4D</color>
     <color name="brown">#A5876C</color>
     <color name="base">#E8994D</color>
+    <color name="garis">#B4B6B8</color>
+    <color name="bg_card_profile">#DFC9BD</color>
+    <color name="fontpoint">#E8994D</color>
 </resources>

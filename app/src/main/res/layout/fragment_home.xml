@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:padding="5dp"
+    tools:context=".Fragmen.Home">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <!--  Header  -->
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--  Hello User  -->
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/primary"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/nunitolight"
+                android:id="@+id/tv_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="Halo, "/>
+
+            <TextView
+                android:textColor="@color/primary"
+                android:layout_marginLeft="2dp"
+                android:fontFamily="@font/nunitbold"
+                android:textStyle="bold"
+                android:id="@+id/tv_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="Wang Jarim"/>
+
+            <LinearLayout
+                android:layout_marginLeft="180dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="100dp"
+                    android:id="@+id/user"
+                    android:background="@drawable/border_circle_avatar"
+                    app:cardBackgroundColor="@color/base"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp">
+
+                    <ImageView
+                        android:id="@+id/iv_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/avatarprofil" />
+
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--  EndText Hello user  -->
+
+        <!--  Description  -->
+        <TextView
+            android:textColor="@color/primary"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-35dp"
+            android:textSize="12dp"
+            android:fontFamily="@font/nunitolight"
+            android:text="Cari hal baru yang ingin dipelajari!"
+            android:id="@+id/descHello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!--  EndDescription  -->
+
+        <!--  Search  -->
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="364dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:background="@drawable/edit_text"/>
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_marginLeft="-30dp"
+                android:src="@drawable/search"
+                android:layout_width="16dp"
+                android:layout_height="15dp"/>
+
+        </LinearLayout>
+        <!--  EndSearch  -->
+
+        <!--   Text     -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="26dp">
+
+            <TextView
+                android:textSize="14dp"
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunitbold"
+                android:text="@string/tv1"
+                android:textColor="@color/primary"
+                android:textStyle="bold" />
+
+            <TextView
+                android:textStyle="bold"
+                android:fontFamily="@font/nunitolight"
+                android:textSize="14dp"
+                android:id="@+id/tv2"
+                android:textColor="@color/base"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:text="Lihat Semua" />
+
+        </LinearLayout>
+
+        <!--    EndText    -->
+
+    </LinearLayout>
+    <!--  EndHeader  -->
+
+    <!--   MenuHome     -->
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="10dp"
+                android:id="@+id/cvArtikel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="@drawable/bg_card1"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="167dp">
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:fontFamily="@font/nunitbold"
+                        android:textStyle="bold"
+                        android:text="Video Belajar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="11dp"/>
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="15dp"
+                        android:fontFamily="@font/nunitolight"
+                        android:textStyle="bold"
+                        android:text="Belajar sambil video"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="9dp"/>
+
+                    <ImageView
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="23dp"
+                        android:src="@drawable/computer"
+                        android:layout_width="72dp"
+                        android:layout_height="87dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvCamera"
+                android:layout_marginLeft="15dp"
+                app:cardCornerRadius="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="@drawable/bg_card2"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="203dp">
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:fontFamily="@font/nunitbold"
+                        android:textStyle="bold"
+                        android:text="Kamera Ajaib"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="11dp"/>
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="15dp"
+                        android:fontFamily="@font/nunitolight"
+                        android:textStyle="bold"
+                        android:text="Belajar sambil video"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="9dp"/>
+
+                    <ImageView
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="64dp"
+                        android:src="@drawable/telescope"
+                        android:layout_width="72dp"
+                        android:layout_height="87dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginRight="15dp"
+                android:id="@+id/cvQuiz"
+                app:cardCornerRadius="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="@drawable/bg_card2"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:fontFamily="@font/nunitbold"
+                        android:textStyle="bold"
+                        android:text="Quiz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="11dp"/>
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="15dp"
+                        android:fontFamily="@font/nunitolight"
+                        android:textStyle="bold"
+                        android:text="Belajar sambil video"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="9dp"/>
+
+                    <ImageView
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="64dp"
+                        android:src="@drawable/quiz"
+                        android:layout_width="72dp"
+                        android:layout_height="87dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginLeft="8dp"
+                app:cardCornerRadius="10dp"
+                android:id="@+id/cvProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="@drawable/bg_card1"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="167dp">
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:fontFamily="@font/nunitbold"
+                        android:textStyle="bold"
+                        android:text="Profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="11dp"/>
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="15dp"
+                        android:fontFamily="@font/nunitolight"
+                        android:textStyle="bold"
+                        android:text="Belajar sambil video"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="9dp"/>
+
+                    <ImageView
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="23dp"
+                        android:src="@drawable/profile"
+                        android:layout_width="72dp"
+                        android:layout_height="87dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--    EndMenuHome    -->
+
+
+</LinearLayout>

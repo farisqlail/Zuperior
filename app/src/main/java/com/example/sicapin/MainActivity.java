@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.WindowManager;
 
+import com.example.sicapin.Activity.ArActivity;
+import com.example.sicapin.LoginRegister.LoginActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -22,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-                startActivity(new Intent(getApplicationContext(), onBoard.class));
+                startActivity(new Intent(getApplicationContext(), LoginActivity.class));
                 finish();
 
             }

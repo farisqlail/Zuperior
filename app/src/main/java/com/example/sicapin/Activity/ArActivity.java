@@ -1,4 +1,4 @@
-package com.example.sicapin;
+package com.example.sicapin.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.WindowManager;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+
+import com.example.sicapin.R;
 
 public class ArActivity extends AppCompatActivity {
 

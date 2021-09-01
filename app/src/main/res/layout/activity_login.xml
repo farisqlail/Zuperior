@@ -147,12 +147,13 @@
         android:paddingLeft="26dp">
 
         <Button
+            android:id="@+id/btnlogin"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@drawable/bg_button1"
-            android:text="Masuk"
             android:fontFamily="@font/nunitbold"
-            android:textSize="14dp"/>
+            android:text="Masuk"
+            android:textSize="14dp" />
 
     </RelativeLayout>
 

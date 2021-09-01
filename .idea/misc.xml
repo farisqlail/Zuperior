@@ -3,6 +3,24 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android/android/Java/Project/Zuperior/app/src/main/res/layout/activity_bottom_nav.xml" value="0.20606884057971014" />
+        <entry key="..\:/Android/android/Java/Project/Zuperior/app/src/main/res/layout/activity_loading_kamera.xml" value="0.1334853090172239" />
+        <entry key="..\:/Android/android/Java/Project/Zuperior/app/src/main/res/layout/activity_login.xml" value="0.1334853090172239" />
+        <entry key="..\:/Android/android/Java/Project/Zuperior/app/src/main/res/layout/activity_main.xml" value="0.1334853090172239" />
+        <entry key="..\:/Android/android/Java/Project/Zuperior/app/src/main/res/layout/activity_nav_bot.xml" value="0.20606884057971014" />
+        <entry key="..\:/Android/android/Java/Project/Zuperior/app/src/main/res/layout/activity_page_hasil_quiz.xml" value="0.1334853090172239" />
+        <entry key="..\:/Android/android/Java/Project/Zuperior/app/src/main/res/layout/activity_start_quiz.xml" value="0.20606884057971014" />
+        <entry key="..\:/Android/android/Java/Project/Zuperior/app/src/main/res/layout/fragment_baca_artikel.xml" value="0.20606884057971014" />
+        <entry key="..\:/Android/android/Java/Project/Zuperior/app/src/main/res/layout/fragment_h_ome.xml" value="0.20606884057971014" />
+        <entry key="..\:/Android/android/Java/Project/Zuperior/app/src/main/res/layout/fragment_home.xml" value="0.20606884057971014" />
+        <entry key="..\:/Android/android/Java/Project/Zuperior/app/src/main/res/layout/fragment_menu_kamera.xml" value="0.20606884057971014" />
+        <entry key="..\:/Android/android/Java/Project/Zuperior/app/src/main/res/layout/fragment_menu_kamera2.xml" value="0.20606884057971014" />
+        <entry key="..\:/Android/android/Java/Project/Zuperior/app/src/main/res/layout/fragment_menu_quiz.xml" value="0.20606884057971014" />
+        <entry key="..\:/Android/android/Java/Project/Zuperior/app/src/main/res/layout/fragment_on_board1.xml" value="0.20606884057971014" />
+        <entry key="..\:/Android/android/Java/Project/Zuperior/app/src/main/res/layout/fragment_profile.xml" value="0.20606884057971014" />
+        <entry key="..\:/Android/android/Java/Project/Zuperior/app/src/main/res/menu/bottom_nav.xml" value="0.27447916666666666" />
+        <entry key="..\:/Android/android/Java/Project/Zuperior/app/src/main/res/mipmap-anydpi-v26/sicapin2.xml" value="0.15989583333333332" />
+        <entry key="..\:/Android/android/Java/Project/Zuperior/app/src/main/res/mipmap-anydpi-v26/sicapin2_round.xml" value="0.15989583333333332" />
         <entry key="..\:/Users/Fariz/AndroidStudioProjects/SICAPIN/app/src/main/res/layout/activity_ar.xml" value="0.2726449275362319" />
         <entry key="..\:/Users/Fariz/AndroidStudioProjects/SICAPIN/app/src/main/res/layout/activity_artikel.xml" value="0.2726449275362319" />
         <entry key="..\:/Users/Fariz/AndroidStudioProjects/SICAPIN/app/src/main/res/layout/activity_login.xml" value="0.264" />
