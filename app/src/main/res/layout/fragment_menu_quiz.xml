@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/background"
     android:orientation="vertical"
-    android:padding="20dp"
+    android:padding="10dp"
     tools:context=".Fragmen.menu_quiz">
 
     <!-- TODO: Update blank fragment layout -->
@@ -14,35 +14,34 @@
     <!--  Container  -->
 
     <LinearLayout
-        android:orientation="vertical"
-        android:layout_gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
 
         <!--   Header     -->
 
         <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <TextView
-                android:textSize="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:fontFamily="@font/nunitosemibold"
-                android:textStyle="bold"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:text="Yuk Kita Quiz"
                 android:textColor="@color/primary"
-                android:text="Yuk Kita Quiz"/>
+                android:textSize="24dp"
+                android:textStyle="bold" />
 
             <TextView
-                android:textSize="16dp"
-                android:fontFamily="@font/nunitolight"
-                android:textColor="@color/primary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Pilih mata pelajaran untuk memulai quiz"/>
+                android:fontFamily="@font/nunitolight"
+                android:text="Pilih mata pelajaran untuk memulai quiz"
+                android:textColor="@color/primary"
+                android:textSize="16dp" />
 
         </LinearLayout>
 
@@ -51,82 +50,88 @@
         <!--   Card Content    -->
 
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="40dp"
+            android:paddingRight="15dp">
 
             <!--     Horizontal 1       -->
 
             <LinearLayout
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="290dp">
+                android:layout_height="300dp"
+                android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
+                    app:cardElevation="20dp"
                     android:id="@+id/ipaquiz"
-                    android:layout_gravity="center"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="10dp">
 
                     <LinearLayout
-                        android:background="@drawable/bg_card2"
-                        android:orientation="vertical"
                         android:layout_width="140dp"
-                        android:layout_height="125dp">
+                        android:layout_height="125dp"
+                        android:background="@drawable/bg_card2"
+                        android:orientation="vertical">
 
                         <TextView
-                            android:layout_marginTop="13dp"
-                            android:layout_marginLeft="10dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="13dp"
                             android:fontFamily="@font/nunitosemibold"
-                            android:textStyle="bold"
-                            android:textSize="13dp"
+                            android:text="Ilmu Pengetahuan Alam"
                             android:textColor="@color/white"
-                            android:text="Ilmu Pengetahuan Alam"/>
+                            android:textSize="13dp"
+                            android:textStyle="bold" />
 
                         <ImageView
-                            android:layout_marginLeft="60dp"
-                            android:src="@drawable/potbunga"
                             android:layout_width="75dp"
-                            android:layout_height="75dp"/>
+                            android:layout_height="75dp"
+                            android:layout_marginLeft="60dp"
+                            android:src="@drawable/potbunga" />
 
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:layout_marginTop="80dp"
-                    android:layout_marginLeft="10dp"
+                    app:cardElevation="20dp"
                     android:id="@+id/ipsquiz"
-                    android:layout_gravity="center"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="80dp"
+                    app:cardCornerRadius="10dp">
 
                     <LinearLayout
-                        android:background="@drawable/bg_card2"
-                        android:orientation="vertical"
                         android:layout_width="140dp"
-                        android:layout_height="125dp">
+                        android:layout_height="125dp"
+                        android:background="@drawable/bg_card2"
+                        android:orientation="vertical">
 
                         <TextView
-                            android:layout_marginTop="13dp"
-                            android:layout_marginLeft="10dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="13dp"
                             android:fontFamily="@font/nunitosemibold"
-                            android:textStyle="bold"
-                            android:textSize="13dp"
+                            android:text="Ilmu Pengetahuan Sosial"
                             android:textColor="@color/white"
-                            android:text="Ilmu Pengetahuan Sosial"/>
+                            android:textSize="13dp"
+                            android:textStyle="bold" />
 
                         <ImageView
-                            android:layout_marginLeft="60dp"
-                            android:src="@drawable/bukuquiz"
                             android:layout_width="75dp"
-                            android:layout_height="75dp"/>
+                            android:layout_height="75dp"
+                            android:layout_marginLeft="60dp"
+                            android:src="@drawable/bukuquiz" />
 
                     </LinearLayout>
 
@@ -139,72 +144,75 @@
             <!--     Horizontal 2       -->
 
             <LinearLayout
-                android:layout_margin="30dp"
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="230dp">
+                android:layout_height="300dp"
+                android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
+                    app:cardElevation="20dp"
                     android:id="@+id/mtkquiz"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp">
 
                     <LinearLayout
-                        android:background="@drawable/bg_card2"
-                        android:orientation="vertical"
                         android:layout_width="140dp"
-                        android:layout_height="125dp">
+                        android:layout_height="125dp"
+                        android:background="@drawable/bg_card2"
+                        android:orientation="vertical">
 
                         <TextView
-                            android:layout_marginTop="13dp"
-                            android:layout_marginLeft="10dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="13dp"
                             android:fontFamily="@font/nunitosemibold"
-                            android:textStyle="bold"
-                            android:textSize="13dp"
+                            android:text="Matematika\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
                             android:textColor="@color/white"
-                            android:text="Matematika\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"/>
+                            android:textSize="13dp"
+                            android:textStyle="bold" />
 
                         <ImageView
-                            android:layout_marginLeft="60dp"
-                            android:src="@drawable/pensilquiz"
                             android:layout_width="75dp"
-                            android:layout_height="75dp"/>
+                            android:layout_height="75dp"
+                            android:layout_marginLeft="60dp"
+                            android:src="@drawable/pensilquiz" />
 
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:layout_marginTop="80dp"
-                    android:layout_marginLeft="10dp"
+                    app:cardElevation="20dp"
                     android:id="@+id/seniquiz"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="80dp"
+                    app:cardCornerRadius="10dp">
 
                     <LinearLayout
-                        android:background="@drawable/bg_card2"
-                        android:orientation="vertical"
                         android:layout_width="140dp"
-                        android:layout_height="125dp">
+                        android:layout_height="125dp"
+                        android:background="@drawable/bg_card2"
+                        android:orientation="vertical">
 
                         <TextView
-                            android:layout_marginTop="13dp"
-                            android:layout_marginLeft="10dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="13dp"
                             android:fontFamily="@font/nunitosemibold"
-                            android:textStyle="bold"
-                            android:textSize="13dp"
+                            android:text="Seni Budaya \t\t\t\t\t\t\t\t\t\t\t"
                             android:textColor="@color/white"
-                            android:text="Seni Budaya \t\t\t\t\t\t\t\t\t\t\t"/>
+                            android:textSize="13dp"
+                            android:textStyle="bold" />
 
                         <ImageView
-                            android:layout_marginLeft="60dp"
-                            android:src="@drawable/senibudaya"
                             android:layout_width="75dp"
-                            android:layout_height="75dp"/>
+                            android:layout_height="75dp"
+                            android:layout_marginLeft="60dp"
+                            android:src="@drawable/senibudaya" />
 
                     </LinearLayout>
 
@@ -221,4 +229,4 @@
     </LinearLayout>
 
     <!-- EndContainer -->
-</LinearLayout>
+</RelativeLayout>
