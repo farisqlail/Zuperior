@@ -7,7 +7,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class InitRetrofit {
 
-    private static final String URL = "https://zuperior-backend-rest-api.herokuapp.com";
+    private static final String URL = "https://zuperior-backend-rest-api.herokuapp.com/api/v1/";
 
     public static Retrofit setInit(){
 
@@ -24,6 +24,9 @@ public class InitRetrofit {
     }
 
     public static ApiInterface getInstance(){
-        return setInit().create(ApiInterface.class);
+//        return setInit().create(ApiInterface.class);
+        ApiInterface apiInterface = setInit().create(ApiInterface.class);
+
+        return apiInterface;
     }
 }

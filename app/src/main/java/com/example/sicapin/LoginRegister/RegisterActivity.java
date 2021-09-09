@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.sicapin.Fragmen.Home;
 import com.example.sicapin.HttpRequest.InitRetrofit;
 import com.example.sicapin.HttpRequest.RegisterRequest;
 import com.example.sicapin.MainActivity;
@@ -60,10 +61,10 @@ public class RegisterActivity extends AppCompatActivity {
                 } else {
 
                     RegisterRequest registerRequest = new RegisterRequest();
-                    registerRequest.setFullName(txtNama.getText().toString());
-                    registerRequest.setEmail(txtEmail.getText().toString());
-                    registerRequest.setUserClass(txtKelas.getText().toString());
+                    registerRequest.setFull_name(txtNama.getText().toString());
                     registerRequest.setUsername(txtUsername.getText().toString());
+                    registerRequest.setEmail(txtEmail.getText().toString());
+                    registerRequest.setUser_class(txtKelas.getText().toString());
                     registerRequest.setPassword(txtPassword.getText().toString());
                     registerUser(registerRequest);
                 }
@@ -73,10 +74,6 @@ public class RegisterActivity extends AppCompatActivity {
 
 
     }
-
-
-
-
 
     private void registerUser(RegisterRequest registerRequest) {
         Call<RegisterResponse> registerResponseCall = (Call<RegisterResponse>) InitRetrofit.getInstance().registerUser(registerRequest);
@@ -88,7 +85,7 @@ public class RegisterActivity extends AppCompatActivity {
                     String message = "Berhasil masuk, selamat belajar";
                     Toast.makeText(RegisterActivity.this, message,Toast.LENGTH_LONG).show();
 
-                    startActivity(new Intent(RegisterActivity.this, MainActivity.class));
+                    startActivity(new Intent(RegisterActivity.this, Home.class));
                 } else {
 
                     String message = "Ada yang error";

@@ -2,9 +2,9 @@ package com.example.sicapin.HttpRequest;
 
 public class RegisterRequest {
 
-    private String fullName;
+    private String full_name;
     private String email;
-    private String userClass;
+    private String user_class;
     private String password;
     private String username;
 
@@ -16,12 +16,20 @@ public class RegisterRequest {
         this.username = username;
     }
 
-    public String getFullName() {
-        return fullName;
+    public String getFull_name() {
+        return full_name;
     }
 
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
+    public void setFull_name(String full_name) {
+        this.full_name = full_name;
+    }
+
+    public String getUser_class() {
+        return user_class;
+    }
+
+    public void setUser_class(String user_class) {
+        this.user_class = user_class;
     }
 
     public String getEmail() {
@@ -32,13 +40,7 @@ public class RegisterRequest {
         this.email = email;
     }
 
-    public String getUserClass() {
-        return userClass;
-    }
 
-    public void setUserClass(String userClass) {
-        this.userClass = userClass;
-    }
 
     public String getPassword() {
         return password;
