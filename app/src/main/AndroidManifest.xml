@@ -13,6 +13,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SICAPIN">
         <activity
+            android:name=".tes"
+            android:exported="true" />
+        <activity
+            android:name=".Tes"
+            android:exported="true"
+            android:label="@string/title_activity_tes"
+            android:theme="@style/Theme.SICAPIN.NoActionBar" />
+        <activity
             android:name=".Activity.StartQuiz"
             android:exported="true" />
         <activity

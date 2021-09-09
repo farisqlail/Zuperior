@@ -13,11 +13,11 @@
 
     <!-- TODO: Update blank fragment layout -->
     <!--Container-->
-    <LinearLayout
-        android:background="@color/background"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="40dp"
+        android:background="@color/background"
         android:orientation="vertical">
 
         <!--  HeaderProfile  -->
@@ -142,12 +142,14 @@
         <!--  EndHeaderProfile  -->
 
         <!--  Mid  -->
-        <androidx.cardview.widget.CardView
+        <LinearLayout
+            android:gravity="center"
             android:id="@+id/midprofil"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="100dp"
+            android:foregroundGravity="center"
             app:cardCornerRadius="10dp"
             app:cardElevation="20dp">
 
@@ -212,17 +214,18 @@
 
             </LinearLayout>
 
-        </androidx.cardview.widget.CardView>
+        </LinearLayout>
 
         <!--  EndMid  -->
 
         <!--  MidInformasi Akun  -->
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="26dp"
+            android:layout_marginTop="200dp"
             app:cardCornerRadius="10dp"
             app:cardElevation="20dp">
 
@@ -406,7 +409,7 @@
 
 
             </LinearLayout>
-        </androidx.cardview.widget.CardView>
+        </LinearLayout>
         <!--  MidEndInformasi Akun  -->
 
 
@@ -416,7 +419,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="500dp"
             android:gravity="center"
             android:orientation="horizontal">
 
@@ -434,7 +437,7 @@
         </LinearLayout>
         <!--  ButtonKeluar  -->
 
-    </LinearLayout>
+    </RelativeLayout>
     <!--  EndContainer  -->
 
 </RelativeLayout>
