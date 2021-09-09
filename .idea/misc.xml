@@ -3,11 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android/android/Java/Project/Zuperior/app/src/main/res/drawable/bg_card2.xml" value="0.28615384615384615" />
+        <entry key="..\:/Android/android/Java/Project/Zuperior/app/src/main/res/drawable/navbottom.xml" value="0.275" />
         <entry key="..\:/Android/android/Java/Project/Zuperior/app/src/main/res/layout/activity_artikel.xml" value="0.11980749746707194" />
         <entry key="..\:/Android/android/Java/Project/Zuperior/app/src/main/res/layout/activity_bottom_nav.xml" value="0.20606884057971014" />
         <entry key="..\:/Android/android/Java/Project/Zuperior/app/src/main/res/layout/activity_loading_kamera.xml" value="0.1334853090172239" />
         <entry key="..\:/Android/android/Java/Project/Zuperior/app/src/main/res/layout/activity_login.xml" value="0.1334853090172239" />
-        <entry key="..\:/Android/android/Java/Project/Zuperior/app/src/main/res/layout/activity_main.xml" value="0.1334853090172239" />
+        <entry key="..\:/Android/android/Java/Project/Zuperior/app/src/main/res/layout/activity_main.xml" value="0.16799999999999998" />
         <entry key="..\:/Android/android/Java/Project/Zuperior/app/src/main/res/layout/activity_nav_bot.xml" value="0.20606884057971014" />
         <entry key="..\:/Android/android/Java/Project/Zuperior/app/src/main/res/layout/activity_page_hasil_quiz.xml" value="0.1334853090172239" />
         <entry key="..\:/Android/android/Java/Project/Zuperior/app/src/main/res/layout/activity_start_quiz.xml" value="0.20606884057971014" />
@@ -34,6 +36,7 @@
         <entry key="..\:/Users/Fariz/AndroidStudioProjects/SICAPIN/app/src/main/res/mipmap-anydpi-v26/ic_launcher_sicapin.xml" value="0.290625" />
         <entry key="..\:/Users/Fariz/AndroidStudioProjects/SICAPIN/app/src/main/res/mipmap-anydpi-v26/ic_launcher_sicapin_round.xml" value="0.290625" />
         <entry key="..\:/Users/Fariz/AndroidStudioProjects/Zuperior/app/src/main/res/layout/activity_login.xml" value="0.26132246376811596" />
+        <entry key="..\:/Users/Fariz/AndroidStudioProjects/Zuperior/app/src/main/res/layout/activity_main.xml" value="0.245018115942029" />
         <entry key="..\:/Users/Fariz/AndroidStudioProjects/Zuperior/app/src/main/res/layout/activity_nav_bot.xml" value="0.264945652173913" />
         <entry key="..\:/Users/Fariz/AndroidStudioProjects/Zuperior/app/src/main/res/layout/activity_register.xml" value="0.26132246376811596" />
       </map>

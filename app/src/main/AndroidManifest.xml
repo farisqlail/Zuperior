@@ -25,9 +25,6 @@
             android:name=".MenuBottomNav.BottomNav"
             android:exported="true" />
         <activity
-            android:name=".ArtikelActivity"
-            android:exported="true" />
-        <activity
             android:name=".LoginRegister.RegisterActivity"
             android:exported="true" />
         <activity

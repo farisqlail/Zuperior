@@ -32,10 +32,6 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
-    private void input() {
-
-    }
-
     public void noActionBar(){
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -70,6 +66,10 @@ public class LoginActivity extends AppCompatActivity {
 
             }
         });
+
+    }
+
+    private void input() {
 
     }
 }

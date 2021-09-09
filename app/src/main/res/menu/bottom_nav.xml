@@ -3,18 +3,18 @@
 
     <item
         android:id="@+id/mberanda"
-        android:icon="@drawable/beranda"
+        android:icon="@drawable/beranda3"
         android:title="Beranda" />
 
     <item
         android:id="@+id/martikel"
         android:icon="@drawable/baca"
-        android:title="Artikel Belajar" />
+        android:title="Bacaan" />
 
     <item
         android:id="@+id/mkamera"
         android:icon="@drawable/ar"
-        android:title="Kamera Ajaib" />
+        android:title="AR" />
 
     <item
         android:id="@+id/mquiz"
