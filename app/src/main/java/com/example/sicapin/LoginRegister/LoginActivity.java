@@ -20,6 +20,7 @@ import com.example.sicapin.MenuBottomNav.BottomNav;
 import com.example.sicapin.R;
 import com.example.sicapin.Response.LoginResponse;
 import com.example.sicapin.Response.RegisterResponse;
+import com.example.sicapin.databinding.FragmentHomeBinding;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -99,7 +100,7 @@ public class LoginActivity extends AppCompatActivity {
                 if (response.isSuccessful()){
 
                     LoginResponse loginResponse = response.body();
-                    startActivity(new Intent(LoginActivity.this, Home.class).putExtra("data", loginResponse));
+                    startActivity(new Intent(LoginActivity.this, BottomNav.class).putExtra("data", loginResponse));
                     finish();
 
                 } else {
