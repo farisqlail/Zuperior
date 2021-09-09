@@ -75,14 +75,15 @@
           <ImageView
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:src="@drawable/icon_user"/>
+              android:src="@drawable/ic_username"/>
 
           <EditText
+              android:id="@+id/txtUsername"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:background="@drawable/input"
               android:paddingLeft="10dp"
-              android:hint="Nama"
+              android:hint="Username"
               android:textColorHint="@color/brown"
               />
           
@@ -112,6 +113,7 @@
                 android:src="@drawable/icon_sandi"/>
 
             <EditText
+                android:id="@+id/txtPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/input"
@@ -147,7 +149,7 @@
         android:paddingLeft="26dp">
 
         <Button
-            android:id="@+id/btnlogin"
+            android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@drawable/bg_button1"
@@ -175,6 +177,7 @@
             android:textColor="@color/primary"/>
 
         <TextView
+            android:id="@+id/linkDaftar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=" Daftar"

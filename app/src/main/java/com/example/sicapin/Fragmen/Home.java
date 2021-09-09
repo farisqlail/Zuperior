@@ -6,27 +6,28 @@ import android.os.Bundle;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import com.example.sicapin.Activity.ArActivity;
 import com.example.sicapin.Activity.StartQuiz;
 import com.example.sicapin.R;
 import com.example.sicapin.tes;
 import com.example.sicapin.onBoard;
 import com.example.sicapin.tes;
+import com.example.sicapin.Response.LoginResponse;
 
 
 public class Home extends Fragment {
 
     protected CardView cvArtikels, cvCameras, cvQuizs, cvProfiles;
 
+    LoginResponse loginResponse;
+
     public Home() {
         // Required empty public constructor
     }
-
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

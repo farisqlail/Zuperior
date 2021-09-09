@@ -78,11 +78,47 @@
                 android:src="@drawable/icon_user"/>
 
             <EditText
+                android:id="@+id/txtNama"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/input"
                 android:paddingLeft="10dp"
-                android:hint="Nama"
+                android:hint="Nama Lengkap"
+                android:textColorHint="@color/brown"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:paddingLeft="26dp"
+        android:paddingRight="26dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_input"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_username"/>
+
+            <EditText
+                android:id="@+id/txtUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input"
+                android:paddingLeft="10dp"
+                android:hint="Username"
                 android:textColorHint="@color/brown"
                 />
 
@@ -112,11 +148,12 @@
                 android:src="@drawable/icon_email"/>
 
             <EditText
+                android:id="@+id/txtEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/input"
                 android:paddingLeft="10dp"
-                android:hint="Nama"
+                android:hint="Email"
                 android:textColorHint="@color/brown"
                 />
 
@@ -146,11 +183,12 @@
                 android:src="@drawable/icon_kelas"/>
 
             <EditText
+                android:id="@+id/txtKelas"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/input"
                 android:paddingLeft="10dp"
-                android:hint="Nama"
+                android:hint="Kelas"
                 android:textColorHint="@color/brown"
                 />
 
@@ -180,6 +218,7 @@
                 android:src="@drawable/icon_sandi"/>
 
             <EditText
+                android:id="@+id/txtPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/input"
@@ -205,12 +244,13 @@
         android:paddingLeft="26dp">
 
         <Button
+            android:id="@+id/btnRegister"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@drawable/bg_button1"
-            android:text="Daftar"
             android:fontFamily="@font/nunitbold"
-            android:textSize="14dp"/>
+            android:text="Daftar"
+            android:textSize="14dp" />
 
     </RelativeLayout>
 
@@ -233,6 +273,7 @@
             android:textColor="@color/primary"/>
 
         <TextView
+            android:id="@+id/linkMasuk"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=" Masuk"
