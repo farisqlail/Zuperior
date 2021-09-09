@@ -1,7 +1,9 @@
 package com.example.sicapin.Fragmen;
 
+import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -9,6 +11,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.sicapin.R;
+import com.example.sicapin.tes;
+
+import java.io.InputStream;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -16,6 +21,8 @@ import com.example.sicapin.R;
  * create an instance of this fragment.
  */
 public class menu_quiz extends Fragment {
+
+    protected CardView cv_ipaq, cv_mtkq, cv_pknq, cv_seniq, cv_bindoq, cv_ipsq;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -62,6 +69,56 @@ public class menu_quiz extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view =inflater.inflate(R.layout.fragment_menu_quiz, container, false);
+        //End Inflate
+
+        //FindViews
+        cv_ipaq     = (CardView) view.findViewById(R.id.ipaquiz);
+        cv_mtkq     = (CardView) view.findViewById(R.id.mtkquiz);
+        cv_ipsq     = (CardView) view.findViewById(R.id.ipsquiz);
+        cv_seniq    = (CardView) view.findViewById(R.id.seniquiz);
+        //EndFindViews
+
+        //Listener
+
+            //Card Seni Budaya Quiz
+        cv_seniq.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity().getApplicationContext(), tes.class);
+                startActivity(intent);
+
+            }
+        });
+
+            //Card Ipa Quiz
+        cv_ipsq.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity().getApplicationContext(), tes.class);
+                startActivity(intent);
+            }
+        });
+
+            //Card Ips Quiz
+        cv_mtkq.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity().getApplicationContext(), tes.class);
+                startActivity(intent);
+            }
+        });
+
+            //Card Ipa Quiz
+        cv_ipaq.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity().getApplicationContext(), tes.class);
+                startActivity(intent);
+            }
+        });
+
+        //EndListener
+
         return view;
     }
 }

@@ -1,7 +1,9 @@
 package com.example.sicapin.Fragmen;
 
+import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -9,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.sicapin.R;
+import com.example.sicapin.tes;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -16,6 +19,8 @@ import com.example.sicapin.R;
  * create an instance of this fragment.
  */
 public class BacaArtikel extends Fragment {
+
+    protected CardView cv_mtka, cv_ipaa, cv_ipsa, cv_pkna;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -62,6 +67,55 @@ public class BacaArtikel extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_baca_artikel, container, false);
+        // EndInflate
+
+        //findViews
+
+        cv_ipaa     = (CardView) view.findViewById(R.id.cvipa);
+        cv_mtka     = (CardView) view.findViewById(R.id.cvmtk);
+        cv_ipsa     = (CardView) view.findViewById(R.id.cvips);
+        cv_pkna     = (CardView) view.findViewById(R.id.cvpkn);
+
+        //EndFindVews
+
+        //Listener
+            //Card ips Baca Artikel
+        cv_ipsa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity().getApplicationContext(), tes.class);
+                startActivity(intent);
+            }
+        });
+
+            //CArd ipa Baca Artikel
+        cv_ipaa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity().getApplicationContext(), tes.class);
+                startActivity(intent);
+            }
+        });
+
+            //Card Matematika Baca Artikel
+        cv_mtka.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity().getApplicationContext(), tes.class);
+                startActivity(intent);
+            }
+        });
+
+            //Card Pkn Baca Artikel
+        cv_pkna.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity().getApplicationContext(), tes.class);
+                startActivity(intent);
+            }
+        });
+
+        //EndListener
         return view;
     }
 }

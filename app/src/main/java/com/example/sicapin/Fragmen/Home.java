@@ -23,7 +23,7 @@ public class Home extends Fragment {
 
     protected CardView cvArtikels, cvCameras, cvQuizs, cvProfiles;
 
-    LoginResponse loginResponse;
+    protected LoginResponse loginResponse;
 
     public Home() {
         // Required empty public constructor
