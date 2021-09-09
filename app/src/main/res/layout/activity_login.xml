@@ -75,15 +75,15 @@
           <ImageView
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:src="@drawable/icon_user"/>
+              android:src="@drawable/ic_username"/>
 
           <EditText
-              android:id="@+id/txtNama"
+              android:id="@+id/txtUsername"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:background="@drawable/input"
               android:paddingLeft="10dp"
-              android:hint="Nama"
+              android:hint="Username"
               android:textColorHint="@color/brown"
               />
           

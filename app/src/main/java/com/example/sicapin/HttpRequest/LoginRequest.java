@@ -2,15 +2,15 @@ package com.example.sicapin.HttpRequest;
 
 public class LoginRequest {
 
-    private String nama;
+    private String username;
     private String password;
 
-    public String getNama() {
-        return nama;
+    public String getUsername() {
+        return username;
     }
 
-    public void setNama(String nama) {
-        this.nama = nama;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getPassword() {

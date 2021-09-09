@@ -1,9 +1,11 @@
 package com.example.sicapin.Response;
 
-public class LoginResponse {
+import java.io.Serializable;
+
+public class LoginResponse implements Serializable {
 
     private String id;
-    private String nama;
+    private String username;
     private String password;
 
     public String getId() {
@@ -14,12 +16,12 @@ public class LoginResponse {
         this.id = id;
     }
 
-    public String getNama() {
-        return nama;
+    public String getUsername() {
+        return username;
     }
 
-    public void setNama(String nama) {
-        this.nama = nama;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getPassword() {

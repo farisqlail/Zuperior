@@ -1,14 +1,17 @@
 package com.example.sicapin.Fragmen;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.sicapin.R;
+import com.example.sicapin.Response.LoginResponse;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -25,6 +28,8 @@ public class Home extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+    LoginResponse loginResponse;
 
     public Home() {
         // Required empty public constructor
@@ -51,6 +56,15 @@ public class Home extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        Intent intent = new Intent();
+
+        if (intent.getExtras() != null){
+            loginResponse = (LoginResponse) intent.getSerializableExtra("data");
+
+            Log.e("TAG", "===> " + loginResponse.getUsername());
+        }
+
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
