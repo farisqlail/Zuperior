@@ -22,7 +22,7 @@
         <LinearLayout
             android:layout_gravity="center"
             android:orientation="horizontal"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <TextView
@@ -180,13 +180,13 @@
                     app:cardElevation="10dp"
                     app:cardCornerRadius="10dp"
                     android:id="@+id/cvArtikel"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <LinearLayout
                         android:background="@drawable/bg_card1"
                         android:orientation="vertical"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="167dp">
 
                         <TextView
@@ -226,13 +226,13 @@
                     android:id="@+id/cvCamera"
                     android:layout_marginLeft="15dp"
                     app:cardCornerRadius="10dp"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <LinearLayout
                         android:background="@drawable/bg_card2"
                         android:orientation="vertical"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="203dp">
 
                         <TextView
@@ -281,7 +281,7 @@
                     android:layout_marginRight="15dp"
                     android:id="@+id/cvQuiz"
                     app:cardCornerRadius="10dp"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <LinearLayout
@@ -327,13 +327,13 @@
                     android:layout_marginLeft="8dp"
                     app:cardCornerRadius="10dp"
                     android:id="@+id/cvProfile"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <LinearLayout
                         android:background="@drawable/bg_card1"
                         android:orientation="vertical"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="167dp">
 
                         <TextView
