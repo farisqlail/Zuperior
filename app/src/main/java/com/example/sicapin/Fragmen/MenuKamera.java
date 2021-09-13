@@ -1,7 +1,9 @@
 package com.example.sicapin.Fragmen;
 
+import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -9,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.sicapin.R;
+import com.example.sicapin.tes;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -16,6 +19,8 @@ import com.example.sicapin.R;
  * create an instance of this fragment.
  */
 public class MenuKamera extends Fragment {
+
+    protected CardView cv_mtk, cv_ipas, cv_ips, cv_seni, cv_bindo, cv_pkn;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -62,6 +67,82 @@ public class MenuKamera extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view =inflater.inflate(R.layout.fragment_menu_kamera, container, false);
+        //EndInfalte
+
+        //FindViews
+
+        cv_bindo    = (CardView) view.findViewById(R.id.cvbindo);
+        cv_ipas     = (CardView) view.findViewById(R.id.cvipa);
+        cv_ips      = (CardView) view.findViewById(R.id.cvips);
+        cv_seni     = (CardView) view.findViewById(R.id.cvseni);
+        cv_pkn      = (CardView) view.findViewById(R.id.cvpkn);
+        cv_mtk      = (CardView) view.findViewById(R.id.cvmtk);
+
+        //EndFindViews
+
+        //Listener
+            //Card Matematika
+        cv_mtk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(getActivity().getApplicationContext(), tes.class);
+                startActivity(intent);
+
+            }
+        });
+
+            //Card Ipa
+        cv_ipas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity().getApplicationContext(), tes.class);
+                startActivity(intent);
+            }
+        });
+
+            //Card bahasa Indonesia
+        cv_bindo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity().getApplicationContext(), tes.class);
+                startActivity(intent);
+            }
+        });
+
+            //Card Ips
+        cv_ips.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(getActivity().getApplicationContext(),tes.class);
+                startActivity(intent);
+
+            }
+        });
+
+            //Card Pkn
+        cv_pkn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity().getApplicationContext(), tes.class);
+                startActivity(intent);
+            }
+        });
+
+            //Card Seni Budaya
+        cv_seni.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(getActivity().getApplicationContext(),tes.class);
+                startActivity(intent);
+
+            }
+        });
+        //EndListener
+
+
         return view;
     }
 }

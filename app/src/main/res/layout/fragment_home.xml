@@ -10,156 +10,162 @@
     tools:context=".Fragmen.Home">
 
     <!-- TODO: Update blank fragment layout -->
-<!--Container-->
+    <!--  Header  -->
     <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <!--  Header  -->
+        <!--  Hello User  -->
         <LinearLayout
-            android:layout_marginTop="30dp"
             android:layout_gravity="center"
-            android:orientation="vertical"
-            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
-            <!--  Hello User  -->
-            <LinearLayout
-                android:layout_gravity="center"
-                android:orientation="horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:textColor="@color/primary"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="20dp"
-                    android:fontFamily="@font/nunitolight"
-                    android:id="@+id/tv_home"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="15dp"
-                    android:text="Halo, "/>
-
-                <TextView
-                    android:textColor="@color/primary"
-                    android:layout_marginLeft="2dp"
-                    android:fontFamily="@font/nunitbold"
-                    android:textStyle="bold"
-                    android:id="@+id/tv_user"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="15dp"
-                    android:text="Wang Jarim"/>
-
-                <LinearLayout
-                    android:layout_marginLeft="100dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <androidx.cardview.widget.CardView
-                        app:cardCornerRadius="100dp"
-                        android:id="@+id/user"
-                        android:background="@drawable/border_circle_avatar"
-                        app:cardBackgroundColor="@color/base"
-                        android:layout_width="60dp"
-                        android:layout_height="60dp">
-
-                        <ImageView
-                            android:id="@+id/iv_user"
-                            android:layout_width="wrap_content"
-                            android:layout_height="40dp"
-                            android:layout_gravity="center"
-                            android:src="@drawable/avatarprofil" />
-
-
-                    </androidx.cardview.widget.CardView>
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <!--  EndText Hello user  -->
-
-            <!--  Description  -->
             <TextView
                 android:textColor="@color/primary"
                 android:textStyle="bold"
                 android:layout_marginLeft="20dp"
-                android:layout_marginTop="-35dp"
-                android:textSize="12dp"
                 android:fontFamily="@font/nunitolight"
-                android:text="Cari hal baru yang ingin dipelajari!"
-                android:id="@+id/descHello"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-
-            <!--  EndDescription  -->
-
-            <!--  Search  -->
-            <LinearLayout
-                android:gravity="center"
-                android:layout_marginTop="40dp"
-                android:layout_gravity="center"
+                android:id="@+id/tv_home"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:textSize="15dp"
+                android:text="Halo, "/>
 
-                <EditText
-                    android:id="@+id/et_search"
-                    android:layout_width="364dp"
-                    android:layout_height="32dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/edit_text"/>
-
-                <ImageView
-                    android:id="@+id/iv_search"
-                    android:layout_marginLeft="-30dp"
-                    android:src="@drawable/search"
-                    android:layout_width="16dp"
-                    android:layout_height="15dp"/>
-
-            </LinearLayout>
-            <!--  EndSearch  -->
-
-            <!--   Text     -->
-            <LinearLayout
+            <TextView
+                android:textColor="@color/primary"
+                android:layout_marginLeft="2dp"
+                android:fontFamily="@font/nunitbold"
+                android:textStyle="bold"
+                android:id="@+id/tv_user"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="26dp">
+                android:textSize="15dp"
+                android:text="Wang Jarim"/>
 
-                <TextView
-                    android:textSize="14dp"
-                    android:id="@+id/tv1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/nunitbold"
-                    android:text="@string/tv1"
-                    android:textColor="@color/primary"
-                    android:textStyle="bold" />
+            <LinearLayout
+                android:layout_marginLeft="170dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
-                <TextView
-                    android:textStyle="bold"
-                    android:fontFamily="@font/nunitolight"
-                    android:textSize="14dp"
-                    android:id="@+id/tv2"
-                    android:textColor="@color/base"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="100dp"
+                    android:id="@+id/user"
+                    android:background="@drawable/border_circle_avatar"
+                    app:cardBackgroundColor="@color/base"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp">
+
+                    <ImageView
+                        android:id="@+id/iv_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/avatarprofil" />
+
+                <LinearLayout
                     android:layout_marginLeft="100dp"
-                    android:text="Lihat Semua" />
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                </androidx.cardview.widget.CardView>
 
             </LinearLayout>
-
-            <!--    EndText    -->
 
         </LinearLayout>
-        <!--  EndHeader  -->
+
+        <!--  EndText Hello user  -->
+
+        <!--  Description  -->
+        <TextView
+            android:textColor="@color/primary"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-35dp"
+            android:textSize="12dp"
+            android:fontFamily="@font/nunitolight"
+            android:text="Cari hal baru yang ingin dipelajari!"
+            android:id="@+id/descHello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!--  EndDescription  -->
+
+        <!--  Search  -->
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="364dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:background="@drawable/edit_text"/>
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_marginLeft="-30dp"
+                android:src="@drawable/search"
+                android:layout_width="16dp"
+                android:layout_height="15dp"/>
+
+        </LinearLayout>
+        <!--  EndSearch  -->
+
+        <!--   Text     -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="26dp">
+
+            <TextView
+                android:textSize="14dp"
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunitbold"
+                android:text="@string/tv1"
+                android:textColor="@color/primary"
+                android:textStyle="bold" />
+
+            <TextView
+                android:textStyle="bold"
+                android:fontFamily="@font/nunitolight"
+                android:textSize="14dp"
+                android:id="@+id/tv2"
+                android:textColor="@color/base"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:text="Lihat Semua" />
+
+        </LinearLayout>
+
+        <!--    EndText    -->
+
+    </LinearLayout>
+    <!--  EndHeader  -->
+<!--Container-->
+    <RelativeLayout
+        android:layout_marginTop="200dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <!--   MenuHome     -->
         <LinearLayout
+
             android:gravity="center"
             android:layout_gravity="center"
             android:orientation="vertical"
@@ -193,7 +199,7 @@
                             android:layout_marginLeft="15dp"
                             android:fontFamily="@font/nunitbold"
                             android:textStyle="bold"
-                            android:text="Video Belajar"
+                            android:text="Artikel Belajar"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="11dp"/>
@@ -371,7 +377,7 @@
         </LinearLayout>
         <!--    EndMenuHome    -->
 
-    </LinearLayout>
+    </RelativeLayout>
 <!--  EndContainer  -->
 
 
