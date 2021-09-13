@@ -54,7 +54,7 @@
                     android:text="Wang Jarim"/>
 
                 <LinearLayout
-                    android:layout_marginLeft="170dp"
+                    android:layout_marginLeft="100dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
