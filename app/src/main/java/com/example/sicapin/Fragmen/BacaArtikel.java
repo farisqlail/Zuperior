@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.sicapin.Activity.artikel_kategori;
 import com.example.sicapin.R;
 import com.example.sicapin.tes;
 
@@ -92,7 +93,7 @@ public class BacaArtikel extends Fragment {
         cv_ipaa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity().getApplicationContext(), tes.class);
+                Intent intent = new Intent(getActivity().getApplicationContext(), artikel_kategori.class);
                 startActivity(intent);
             }
         });

@@ -7,70 +7,85 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg_kat_artikel"
     android:layout_gravity="center"
-    tools:context=".artikel_kategori">
+    tools:context=".Activity.artikel_kategori">
 
 <!--  Container  -->
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <TextView
-            android:gravity="center"
-            android:layout_marginTop="26dp"
-            android:textColor="@color/primary"
-            android:textSize="18dp"
-            android:fontFamily="@font/nunitbold"
-            android:textStyle="bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Materi Pelajaran"/>
+            android:layout_marginTop="26dp"
+            android:fontFamily="@font/nunitbold"
+            android:gravity="center"
+            android:text="Materi Pelajaran"
+            android:textColor="@color/primary"
+            android:textSize="18dp"
+            android:textStyle="bold" />
 
         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="27dp"
             android:layout_marginTop="40dp"
-            android:textColor="@color/primary"
-            android:textSize="18dp"
             android:fontFamily="@font/nunitbold"
-            android:textStyle="bold"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Ilmu Pengetahuan Alam"/>
-        <TextView
-            android:layout_marginLeft="27dp"
+            android:text="Ilmu Pengetahuan Alam"
             android:textColor="@color/primary"
             android:textSize="18dp"
-            android:fontFamily="@font/nunitolight"
+            android:textStyle="bold" />
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Selamat Belajar dan Semangat"/>
+            android:layout_marginLeft="27dp"
+            android:fontFamily="@font/nunitolight"
+            android:text="Selamat Belajar dan Semangat"
+            android:textColor="@color/primary"
+            android:textSize="18dp" />
 
-<!--   class Content     -->
+        <!--   class Content     -->
 
-        <ScrollView
-            android:layout_marginTop="242dp"
-            android:gravity="center"
-            android:layout_gravity="center"
-            android:background="@drawable/card_kat_artikel"
-            android:orientation="vertical"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="490dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="242dp"
+            android:background="@drawable/card_kat_artikel"
+            android:orientation="vertical">
 
             <TextView
-                android:layout_marginTop="20dp"
-                android:gravity="center"
-                android:textColor="@color/primary"
-                android:textSize="18dp"
-                android:fontFamily="@font/nunitbold"
-                android:textStyle="bold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Materi Pelajaran"/>
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/nunitbold"
+                android:gravity="center"
+                android:text="Materi Pelajaran"
+                android:textColor="@color/primary"
+                android:textSize="18dp"
+                android:textStyle="bold" />
 
-        </ScrollView>
+            <!--    List Artikel        -->
+            <ScrollView
+                android:layout_marginTop="26dp"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:orientation="vertical">
 
-<!--   End Class Content     -->
+                <ListView
+                    android:id="@+id/lv_kat_artikel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </ScrollView>
+            <!--    EndList Artikel        -->
+
+        </LinearLayout>
+
+        <!--   End Class Content     -->
 
 
     </LinearLayout>

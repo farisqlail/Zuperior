@@ -1,8 +1,10 @@
-package com.example.sicapin;
+package com.example.sicapin.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.sicapin.R;
 
 public class artikel_kategori extends AppCompatActivity {
 
