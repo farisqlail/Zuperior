@@ -123,12 +123,15 @@
 
         <!--   Text     -->
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="26dp">
 
             <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
                 android:textSize="14dp"
                 android:id="@+id/tv1"
                 android:layout_width="wrap_content"
@@ -139,6 +142,8 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
                 android:textStyle="bold"
                 android:fontFamily="@font/nunitolight"
                 android:textSize="14dp"
@@ -146,7 +151,7 @@
                 android:textColor="@color/base"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="100dp"
+                android:layout_marginLeft="50dp"
                 android:text="Lihat Semua" />
 
         </LinearLayout>
@@ -156,7 +161,7 @@
     </LinearLayout>
     <!--  EndHeader  -->
 <!--Container-->
-    <RelativeLayout
+    <ScrollView
         android:layout_marginTop="200dp"
         android:gravity="center"
         android:orientation="vertical"
@@ -166,106 +171,106 @@
         <!--   MenuHome     -->
         <LinearLayout
 
-            android:gravity="center"
-            android:layout_gravity="center"
-            android:orientation="vertical"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
 
             <LinearLayout
-                android:layout_marginTop="15dp"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:orientation="horizontal"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
-                    app:cardElevation="10dp"
-                    app:cardCornerRadius="10dp"
                     android:id="@+id/cvArtikel"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp">
 
                     <LinearLayout
-                        android:background="@drawable/bg_card1"
-                        android:orientation="vertical"
                         android:layout_width="match_parent"
-                        android:layout_height="167dp">
+                        android:layout_height="167dp"
+                        android:background="@drawable/bg_card1"
+                        android:orientation="vertical">
 
                         <TextView
-                            android:textColor="@color/white"
-                            android:layout_marginTop="15dp"
-                            android:layout_marginLeft="15dp"
-                            android:fontFamily="@font/nunitbold"
-                            android:textStyle="bold"
-                            android:text="Artikel Belajar"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="11dp"/>
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/nunitbold"
+                            android:text="Artikel Belajar"
+                            android:textColor="@color/white"
+                            android:textSize="11dp"
+                            android:textStyle="bold" />
 
                         <TextView
-                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:layout_marginLeft="15dp"
                             android:fontFamily="@font/nunitolight"
-                            android:textStyle="bold"
                             android:text="Belajar sambil video"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textSize="9dp"/>
+                            android:textColor="@color/white"
+                            android:textSize="9dp"
+                            android:textStyle="bold" />
 
                         <ImageView
+                            android:layout_width="72dp"
+                            android:layout_height="87dp"
                             android:layout_marginLeft="80dp"
                             android:layout_marginTop="23dp"
-                            android:src="@drawable/computer"
-                            android:layout_width="72dp"
-                            android:layout_height="87dp"/>
+                            android:src="@drawable/computer" />
 
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    app:cardElevation="10dp"
                     android:id="@+id/cvCamera"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
                     app:cardCornerRadius="10dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    app:cardElevation="10dp">
 
                     <LinearLayout
-                        android:background="@drawable/bg_card2"
-                        android:orientation="vertical"
                         android:layout_width="match_parent"
-                        android:layout_height="203dp">
+                        android:layout_height="203dp"
+                        android:background="@drawable/bg_card2"
+                        android:orientation="vertical">
 
                         <TextView
-                            android:textColor="@color/white"
-                            android:layout_marginTop="15dp"
-                            android:layout_marginLeft="15dp"
-                            android:fontFamily="@font/nunitbold"
-                            android:textStyle="bold"
-                            android:text="Kamera Ajaib"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="11dp"/>
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/nunitbold"
+                            android:text="Kamera Ajaib"
+                            android:textColor="@color/white"
+                            android:textSize="11dp"
+                            android:textStyle="bold" />
 
                         <TextView
-                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:layout_marginLeft="15dp"
                             android:fontFamily="@font/nunitolight"
-                            android:textStyle="bold"
                             android:text="Belajar sambil video"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textSize="9dp"/>
+                            android:textColor="@color/white"
+                            android:textSize="9dp"
+                            android:textStyle="bold" />
 
                         <ImageView
+                            android:layout_width="72dp"
+                            android:layout_height="87dp"
                             android:layout_marginLeft="80dp"
                             android:layout_marginTop="64dp"
-                            android:src="@drawable/telescope"
-                            android:layout_width="72dp"
-                            android:layout_height="87dp"/>
+                            android:src="@drawable/telescope" />
 
                     </LinearLayout>
 
@@ -274,99 +279,99 @@
             </LinearLayout>
 
             <LinearLayout
-                android:gravity="center"
-                android:layout_gravity="center"
-                android:orientation="horizontal"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
-                    app:cardElevation="10dp"
-                    android:layout_marginRight="15dp"
                     android:id="@+id/cvQuiz"
-                    app:cardCornerRadius="10dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp">
 
                     <LinearLayout
-                        android:background="@drawable/bg_card2"
-                        android:orientation="vertical"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_card2"
+                        android:orientation="vertical">
 
                         <TextView
-                            android:textColor="@color/white"
-                            android:layout_marginTop="15dp"
-                            android:layout_marginLeft="15dp"
-                            android:fontFamily="@font/nunitbold"
-                            android:textStyle="bold"
-                            android:text="Quiz"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="11dp"/>
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/nunitbold"
+                            android:text="Quiz"
+                            android:textColor="@color/white"
+                            android:textSize="11dp"
+                            android:textStyle="bold" />
 
                         <TextView
-                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:layout_marginLeft="15dp"
                             android:fontFamily="@font/nunitolight"
-                            android:textStyle="bold"
                             android:text="Belajar sambil video"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textSize="9dp"/>
+                            android:textColor="@color/white"
+                            android:textSize="9dp"
+                            android:textStyle="bold" />
 
                         <ImageView
+                            android:layout_width="72dp"
+                            android:layout_height="87dp"
                             android:layout_marginLeft="60dp"
                             android:layout_marginTop="64dp"
-                            android:src="@drawable/quiz"
-                            android:layout_width="72dp"
-                            android:layout_height="87dp"/>
+                            android:src="@drawable/quiz" />
 
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    app:cardElevation="10dp"
-                    android:layout_marginLeft="8dp"
-                    app:cardCornerRadius="10dp"
                     android:id="@+id/cvProfile"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp">
 
                     <LinearLayout
-                        android:background="@drawable/bg_card1"
-                        android:orientation="vertical"
                         android:layout_width="match_parent"
-                        android:layout_height="167dp">
+                        android:layout_height="167dp"
+                        android:background="@drawable/bg_card1"
+                        android:orientation="vertical">
 
                         <TextView
-                            android:textColor="@color/white"
-                            android:layout_marginTop="15dp"
-                            android:layout_marginLeft="15dp"
-                            android:fontFamily="@font/nunitbold"
-                            android:textStyle="bold"
-                            android:text="Profile"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="11dp"/>
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/nunitbold"
+                            android:text="Profile"
+                            android:textColor="@color/white"
+                            android:textSize="11dp"
+                            android:textStyle="bold" />
 
                         <TextView
-                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:layout_marginLeft="15dp"
                             android:fontFamily="@font/nunitolight"
-                            android:textStyle="bold"
                             android:text="Belajar sambil video"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textSize="9dp"/>
+                            android:textColor="@color/white"
+                            android:textSize="9dp"
+                            android:textStyle="bold" />
 
                         <ImageView
+                            android:layout_width="72dp"
+                            android:layout_height="87dp"
                             android:layout_marginLeft="80dp"
                             android:layout_marginTop="23dp"
-                            android:src="@drawable/profile"
-                            android:layout_width="72dp"
-                            android:layout_height="87dp"/>
+                            android:src="@drawable/profile" />
 
                     </LinearLayout>
 
@@ -377,7 +382,7 @@
         </LinearLayout>
         <!--    EndMenuHome    -->
 
-    </RelativeLayout>
+    </ScrollView>
 <!--  EndContainer  -->
 
 

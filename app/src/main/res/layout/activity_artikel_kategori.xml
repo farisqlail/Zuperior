@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_kat_artikel"
+    android:layout_gravity="center"
+    tools:context=".artikel_kategori">
+
+<!--  Container  -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:gravity="center"
+            android:layout_marginTop="26dp"
+            android:textColor="@color/primary"
+            android:textSize="18dp"
+            android:fontFamily="@font/nunitbold"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Materi Pelajaran"/>
+
+        <TextView
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/primary"
+            android:textSize="18dp"
+            android:fontFamily="@font/nunitbold"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ilmu Pengetahuan Alam"/>
+        <TextView
+            android:layout_marginLeft="27dp"
+            android:textColor="@color/primary"
+            android:textSize="18dp"
+            android:fontFamily="@font/nunitolight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selamat Belajar dan Semangat"/>
+
+<!--   class Content     -->
+
+        <ScrollView
+            android:layout_marginTop="242dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/card_kat_artikel"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textColor="@color/primary"
+                android:textSize="18dp"
+                android:fontFamily="@font/nunitbold"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Materi Pelajaran"/>
+
+        </ScrollView>
+
+<!--   End Class Content     -->
+
+
+    </LinearLayout>
+
+<!--  EndContainer  -->
+
+</RelativeLayout>

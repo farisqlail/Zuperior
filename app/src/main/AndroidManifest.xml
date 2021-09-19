@@ -13,6 +13,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SICAPIN">
         <activity
+            android:name=".artikel_kategori"
+            android:exported="true" />
+        <activity
+            android:name=".kategori_artikel"
+            android:exported="true"
+            android:label="@string/title_activity_kategori_artikel"
+            android:theme="@style/Theme.SICAPIN.NoActionBar" />
+        <activity
             android:name=".tes"
             android:exported="true" />
         <activity

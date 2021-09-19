@@ -5,6 +5,8 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/background"
+    android:layout_gravity="center"
+    android:gravity="center"
     android:orientation="vertical"
     android:padding="10dp"
     tools:context=".Fragmen.menu_quiz">
