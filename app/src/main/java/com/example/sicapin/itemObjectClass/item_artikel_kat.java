@@ -25,7 +25,7 @@ public class item_artikel_kat extends ArrayAdapter<String> {
         super(context, R.layout.lv_item_kat_artikel, tv_lv);
 
         this.context = context;
-        this.ic_lv = this.ic_lv;
+        this.ic_lv = ic_lv;
         this.tv_lv = tv_lv;
 
     }
