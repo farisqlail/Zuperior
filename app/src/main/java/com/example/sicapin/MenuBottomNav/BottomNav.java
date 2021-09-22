@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.WindowManager;
@@ -41,6 +42,8 @@ public class BottomNav extends AppCompatActivity implements BottomNavigationView
         findViews();
 
         firstLayout();
+
+        Intent intent = new Intent();
 
 
     }
@@ -94,4 +97,5 @@ public class BottomNav extends AppCompatActivity implements BottomNavigationView
 
         return true;
     }
+
 }
