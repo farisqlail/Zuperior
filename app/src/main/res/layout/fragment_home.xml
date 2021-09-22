@@ -41,11 +41,10 @@
                 android:layout_marginLeft="2dp"
                 android:fontFamily="@font/nunitbold"
                 android:textStyle="bold"
-                android:id="@+id/tv_user"
+                android:id="@+id/txtUsername"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="15dp"
-                android:text="Wang Jarim"/>
+                android:textSize="15dp"/>
 
             <LinearLayout
                 android:layout_marginLeft="170dp"
