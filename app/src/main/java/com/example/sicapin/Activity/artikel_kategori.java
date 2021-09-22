@@ -11,8 +11,8 @@ import com.example.sicapin.itemObjectClass.item_artikel_kat;
 public class artikel_kategori extends AppCompatActivity {
 
     ListView  lv_kat_artikel;
-    String[]  tv_lv     = {"Berkenalan dengan biologi", "Ada apa dengan biologi ?", "Proses fotosintesis", "Rantai makanan"};
-    Integer[] ic_lv     = {R.drawable.katarton, R.drawable.kataroff, R.drawable.kataroff, R.drawable.kataroff};
+    String[]  tv_lv     = {"Berkenalan dengan biologi", "Ada apa dengan biologi ?", "Proses fotosintesis", "Rantai makanan", "Tanpa Judul", "Tanpa Judul", "Tanpa Judul", "Tanpa Judul"};
+    Integer[] ic_lv     = {R.drawable.kataroff, R.drawable.kataroff, R.drawable.kataroff, R.drawable.kataroff, R.drawable.kataroff, R.drawable.kataroff, R.drawable.kataroff, R.drawable.kataroff};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
