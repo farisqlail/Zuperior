@@ -10,6 +10,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+
 import com.example.sicapin.Activity.ArActivity;
 import com.example.sicapin.Activity.StartQuiz;
 import com.example.sicapin.R;
@@ -22,7 +24,7 @@ import com.example.sicapin.Response.LoginResponse;
 public class Home extends Fragment {
 
     protected CardView cvArtikels, cvCameras, cvQuizs, cvProfiles;
-
+    protected TextView username;
     protected LoginResponse loginResponse;
 
     public Home() {
@@ -41,8 +43,15 @@ public class Home extends Fragment {
         cvCameras  = (CardView) view.findViewById(R.id.cvCamera);
         cvProfiles = (CardView) view.findViewById(R.id.cvProfile);
         cvQuizs    = (CardView) view.findViewById(R.id.cvQuiz);
+        username = (TextView) view.findViewById(R.id.txtUsername);
         //EndFindViews
 
+        Intent intent = new Intent();
+
+        if (intent.getExtras() != null){
+            String passedUsername = intent.getStringExtra("data");
+            username.setText(passedUsername);
+        }
 
         //Listener
 
