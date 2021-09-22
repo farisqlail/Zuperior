@@ -62,8 +62,13 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent( LoginActivity.this, BottomNav.class);
-                startActivity(intent);
+                if (TextUtils.isEmpty(txtNama.getText().toString()) || TextUtils.isEmpty(txtPassword.getText().toString())){
+                    Toast.makeText(LoginActivity.this, "Pastikan semua terisi", Toast.LENGTH_SHORT).show();
+                } else {
+                    login();
+                }
+//                Intent intent = new Intent( LoginActivity.this, BottomNav.class);
+//                startActivity(intent);
 
             }
         });
@@ -72,12 +77,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if (TextUtils.isEmpty(txtNama.getText().toString()) || TextUtils.isEmpty(txtPassword.getText().toString())){
-                    Toast.makeText(LoginActivity.this, "Pastikan semua terisi", Toast.LENGTH_SHORT).show();
-                } else {
-                    login();
-                }
-//                startActivity(new Intent(getApplicationContext(), RegisterActivity.class));
+                startActivity(new Intent(getApplicationContext(), RegisterActivity.class));
 
             }
         });
