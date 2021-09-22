@@ -12,9 +12,15 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.sicapin.Fragmen.Home;
+import com.example.sicapin.HttpRequest.InitRetrofit;
+import com.example.sicapin.HttpRequest.RegisterRequest;
 import com.example.sicapin.MainActivity;
 import com.example.sicapin.R;
 import com.example.sicapin.Response.RegisterResponse;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -69,4 +75,30 @@ public class RegisterActivity extends AppCompatActivity {
 
     }
 
+    private void registerUser(RegisterRequest registerRequest) {
+        Call<RegisterResponse> registerResponseCall = (Call<RegisterResponse>) InitRetrofit.getInstance().registerUser(registerRequest);
+        registerResponseCall.enqueue(new Callback<RegisterResponse>() {
+            @Override
+            public void onResponse(Call<RegisterResponse> call, Response<RegisterResponse> response) {
+                if (response.isSuccessful()){
+
+                    String message = "Berhasil masuk, selamat belajar";
+                    Toast.makeText(RegisterActivity.this, message,Toast.LENGTH_LONG).show();
+
+                    startActivity(new Intent(RegisterActivity.this, Home.class));
+                } else {
+
+                    String message = "Ada yang error";
+                    Toast.makeText(RegisterActivity.this, message,Toast.LENGTH_LONG).show();
+                }
+            }
+
+            @Override
+            public void onFailure(Call<RegisterResponse> call, Throwable t) {
+
+                String message = t.getLocalizedMessage();
+                Toast.makeText(RegisterActivity.this, message,Toast.LENGTH_LONG).show();
+            }
+        });
+    }
 }
