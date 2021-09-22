@@ -43,15 +43,7 @@ public class Home extends Fragment {
         cvCameras  = (CardView) view.findViewById(R.id.cvCamera);
         cvProfiles = (CardView) view.findViewById(R.id.cvProfile);
         cvQuizs    = (CardView) view.findViewById(R.id.cvQuiz);
-        username = (TextView) view.findViewById(R.id.txtUsername);
         //EndFindViews
-
-        Intent intent = new Intent();
-
-        if (intent.getExtras() != null){
-            String passedUsername = intent.getStringExtra("data");
-            username.setText(passedUsername);
-        }
 
         //Listener
 

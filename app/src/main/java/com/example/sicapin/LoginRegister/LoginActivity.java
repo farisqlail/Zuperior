@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.text.Editable;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.WindowManager;
@@ -28,47 +29,34 @@ public class LoginActivity extends AppCompatActivity {
 
     protected Button btnLogin;
     private TextView linkDaftar;
-    private EditText txtNama, txtPassword;
+    EditText txtNama, txtPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
-
-        noActionBar();
-        findViews();
-        klik();
-        input();
-
-    }
-
-    public void noActionBar(){
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-    }
-
-    public void findViews() {
+        setContentView(R.layout.activity_login);
 
         btnLogin = (Button) findViewById(R.id.btnLogin);
         linkDaftar = (TextView) findViewById(R.id.linkDaftar);
         txtNama = (EditText) findViewById(R.id.txtNama);
         txtPassword = (EditText) findViewById(R.id.txtPassword);
 
-    }
-
-    public void klik() {
-
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                if (TextUtils.isEmpty(txtNama.getText().toString()) || TextUtils.isEmpty(txtPassword.getText().toString())){
-                    Toast.makeText(LoginActivity.this, "Pastikan semua terisi", Toast.LENGTH_SHORT).show();
-                } else {
-                    login();
-                }
-//                Intent intent = new Intent( LoginActivity.this, BottomNav.class);
-//                startActivity(intent);
+//                if (TextUtils.isEmpty(txtNama.getText().toString()) || TextUtils.isEmpty(txtPassword.getText().toString())){
+//
+//                    Toast.makeText(LoginActivity.this, "Pastikan semua terisi", Toast.LENGTH_SHORT).show();
+//
+//                } else {
+//                    login();
+//
+//                }
+                Intent intent = new Intent( LoginActivity.this, BottomNav.class);
+                startActivity(intent);
 
             }
         });
@@ -81,6 +69,26 @@ public class LoginActivity extends AppCompatActivity {
 
             }
         });
+//        noActionBar();
+//        findViews();
+//        klik();
+//        input();
+
+    }
+
+    public void noActionBar(){
+
+    }
+
+    public void findViews() {
+
+
+
+    }
+
+    public void klik() {
+
+
 
     }
 
@@ -120,8 +128,4 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
-
-    private void input() {
-
-    }
 }

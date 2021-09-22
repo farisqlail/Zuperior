@@ -6,9 +6,11 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.WindowManager;
+import android.widget.TextView;
 
 import com.example.sicapin.Fragmen.BacaArtikel;
 import com.example.sicapin.Fragmen.Home;
@@ -29,6 +31,7 @@ public class BottomNav extends AppCompatActivity implements BottomNavigationView
     protected long back;
     protected BottomNavigationView bottomNavigationView;
 
+    protected TextView username;
 
 
     @Override
@@ -42,6 +45,12 @@ public class BottomNav extends AppCompatActivity implements BottomNavigationView
 
         firstLayout();
 
+        Intent intent = new Intent();
+
+        if (intent.getExtras() != null){
+            String passedUsername = intent.getStringExtra("data");
+            username.setText(passedUsername);
+        }
 
     }
 
