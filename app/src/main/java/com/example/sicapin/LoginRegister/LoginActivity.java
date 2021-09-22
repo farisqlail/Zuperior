@@ -40,23 +40,26 @@ public class LoginActivity extends AppCompatActivity {
 
         btnLogin = (Button) findViewById(R.id.btnLogin);
         linkDaftar = (TextView) findViewById(R.id.linkDaftar);
-        txtNama = (EditText) findViewById(R.id.txtNama);
+        txtNama = (EditText) findViewById(R.id.txtUsername);
         txtPassword = (EditText) findViewById(R.id.txtPassword);
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-//                if (TextUtils.isEmpty(txtNama.getText().toString()) || TextUtils.isEmpty(txtPassword.getText().toString())){
-//
-//                    Toast.makeText(LoginActivity.this, "Pastikan semua terisi", Toast.LENGTH_SHORT).show();
-//
-//                } else {
-//                    login();
-//
-//                }
-                Intent intent = new Intent( LoginActivity.this, BottomNav.class);
-                startActivity(intent);
+                if (TextUtils.isEmpty(txtNama.getText().toString())  ||  TextUtils.isEmpty(txtPassword.getText().toString())) {
+
+                    Toast.makeText(LoginActivity.this, "Pastikan semua terisi", Toast.LENGTH_SHORT).show();
+
+                } else {
+                            LoginRequest loginRequest = new LoginRequest();
+                            loginRequest.setUsername(txtNama.getText().toString());
+                    loginRequest.setPassword(txtPassword.getText().toString());
+                    login(loginRequest);
+
+                }
+//                Intent intent = new Intent( LoginActivity.this, BottomNav.class);
+//                startActivity(intent);
 
             }
         });
@@ -92,11 +95,7 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
-    public void login(){
-
-        LoginRequest loginRequest = new LoginRequest();
-        loginRequest.setUsername(txtNama.getText().toString());
-        loginRequest.setPassword(txtPassword.getText().toString());
+    public void login(LoginRequest loginRequest){
 
         Call<LoginResponse> loginResponseCall = (Call<LoginResponse>) InitRetrofit.getInstance().loginUser(loginRequest);
         loginResponseCall.enqueue(new Callback<LoginResponse>() {

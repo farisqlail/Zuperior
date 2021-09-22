@@ -8,6 +8,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.WindowManager;
 import android.widget.TextView;
@@ -21,6 +22,7 @@ import com.example.sicapin.Fragmen.onBoard2;
 import com.example.sicapin.Fragmen.onBoard3;
 import com.example.sicapin.Fragmen.profile;
 import com.example.sicapin.R;
+import com.example.sicapin.Response.LoginResponse;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class BottomNav extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
@@ -32,6 +34,7 @@ public class BottomNav extends AppCompatActivity implements BottomNavigationView
     protected BottomNavigationView bottomNavigationView;
 
     protected TextView username;
+    LoginResponse loginResponse;
 
 
     @Override
@@ -45,12 +48,17 @@ public class BottomNav extends AppCompatActivity implements BottomNavigationView
 
         firstLayout();
 
-        Intent intent = new Intent();
+        username = (TextView) findViewById(R.id.username);
+
+        Intent intent = getIntent();
 
         if (intent.getExtras() != null){
-            String passedUsername = intent.getStringExtra("data");
-            username.setText(passedUsername);
+            loginResponse = (LoginResponse) intent.getSerializableExtra("data");
+            System.out.println(loginResponse);
+//            Log.e("TAG", loginResponse.getUsername());
+//            username.setText(loginResponse.getUsername());
         }
+
 
     }
 
@@ -103,4 +111,5 @@ public class BottomNav extends AppCompatActivity implements BottomNavigationView
 
         return true;
     }
+
 }

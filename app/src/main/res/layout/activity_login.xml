@@ -79,7 +79,6 @@
 
           <EditText
               android:id="@+id/txtUsername"
-              android:editable="true"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:background="@drawable/input"
@@ -115,7 +114,6 @@
 
             <EditText
                 android:id="@+id/txtPassword"
-                android:editable="true"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/input"
