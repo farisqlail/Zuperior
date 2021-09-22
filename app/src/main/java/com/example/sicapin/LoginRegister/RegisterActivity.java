@@ -47,21 +47,21 @@ public class RegisterActivity extends AppCompatActivity {
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                if (TextUtils.isEmpty(txtNama.getText().toString())  ||  TextUtils.isEmpty(txtKelas.getText().toString())) {
-//
-//                    String message = "Inputan harus diisi semua";
-//                    Toast.makeText(RegisterActivity.this, message,Toast.LENGTH_LONG).show();
-//
-//                } else {
-//
-//                    RegisterRequest registerRequest = new RegisterRequest();
-//                    registerRequest.setFull_name(txtNama.getText().toString());
-//                    registerRequest.setUsername(txtUsername.getText().toString());
-//                    registerRequest.setEmail(txtEmail.getText().toString());
-//                    registerRequest.setUser_class(txtKelas.getText().toString());
-//                    registerRequest.setPassword(txtPassword.getText().toString());
-//                    registerUser(registerRequest);
-//                }
+                if (TextUtils.isEmpty(txtNama.getText().toString())  ||  TextUtils.isEmpty(txtKelas.getText().toString())) {
+
+                    String message = "Inputan harus diisi semua";
+                    Toast.makeText(RegisterActivity.this, message,Toast.LENGTH_LONG).show();
+
+                } else {
+
+                    RegisterRequest registerRequest = new RegisterRequest();
+                    registerRequest.setFull_name(txtNama.getText().toString());
+                    registerRequest.setUsername(txtUsername.getText().toString());
+                    registerRequest.setEmail(txtEmail.getText().toString());
+                    registerRequest.setUser_class(txtKelas.getText().toString());
+                    registerRequest.setPassword(txtPassword.getText().toString());
+                    registerUser(registerRequest);
+                }
 
             }
         });
