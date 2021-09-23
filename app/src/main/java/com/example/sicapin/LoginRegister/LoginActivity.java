@@ -20,6 +20,9 @@ import com.example.sicapin.MenuBottomNav.BottomNav;
 import com.example.sicapin.R;
 import com.example.sicapin.Response.LoginResponse;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -105,14 +108,11 @@ public class LoginActivity extends AppCompatActivity {
                 if (response.isSuccessful()){
                     Toast.makeText(LoginActivity.this, "Berhasil masuk!", Toast.LENGTH_SHORT).show();
                     LoginResponse loginResponse = response.body();
+                    String jsonData = response.body().toString();
+                    JSONObject jsonObject = new JSONObject();
+                    System.out.println(jsonData);
 
-                    new Handler().postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-
-                            startActivity(new Intent(getApplicationContext(), BottomNav.class).putExtra("data", loginResponse.getUsername()));
-                        }
-                    }, 700);
+                    startActivity(new Intent(getApplicationContext(), BottomNav.class).putExtra("data", loginResponse.getUsername()));
 
                 } else {
                     Toast.makeText(LoginActivity.this, "Gagal masuk!", Toast.LENGTH_SHORT).show();
