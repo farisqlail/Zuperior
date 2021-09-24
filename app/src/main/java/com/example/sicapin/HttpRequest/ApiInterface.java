@@ -15,7 +15,7 @@ public interface ApiInterface {
     //Zuperior API Masuk
 //    @FormUrlEncoded
     @POST("auth/login")
-    Call<LoginResponse> loginUser(@Body LoginRequest loginRequest);
+    Call<Object> loginUser(@Body LoginRequest loginRequest);
 
     @POST("auth/register")
     Call<RegisterResponse> registerUser(@Body RegisterRequest registerRequest);

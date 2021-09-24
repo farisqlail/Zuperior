@@ -21,6 +21,7 @@ import com.example.sicapin.Fragmen.onBoard1;
 import com.example.sicapin.Fragmen.onBoard2;
 import com.example.sicapin.Fragmen.onBoard3;
 import com.example.sicapin.Fragmen.profile;
+import com.example.sicapin.LoginRegister.LoginActivity;
 import com.example.sicapin.R;
 import com.example.sicapin.Response.LoginResponse;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -50,16 +51,19 @@ public class BottomNav extends AppCompatActivity implements BottomNavigationView
 
         firstLayout();
 
-        username = (TextView) findViewById(R.id.username);
-
-        Intent intent = getIntent();
-
-        if (intent.getExtras() != null){
-            loginResponse = (LoginResponse) intent.getSerializableExtra("data");
-            System.out.println(loginResponse);
-//            Log.e("TAG", loginResponse.getUsername());
-//            username.setText(loginResponse.getUsername());
-        }
+//        username = (TextView) findViewById(R.id.dataUsername);
+//
+//        Intent intent = getIntent();
+//        Bundle bundle = intent.getExtras();
+//
+//        if (intent.getExtras() != null){
+////            System.out.println(bundle.getSerializable("username"));
+//            username.setText("haha");
+////            LoginActivity loginActivity = (LoginActivity) intent.getSerializableExtra("username");
+////            System.out.println(loginActivity);
+////            Log.e("TAG", loginResponse.getUsername());
+////            username.setText(loginResponse.getUsername());
+//        }
 
 
     }

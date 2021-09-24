@@ -37,12 +37,11 @@
                 android:text="Halo, "/>
 
             <TextView
-                android:text="Wang Jarim"
+                android:id="@+id/dataUsername"
                 android:textColor="@color/primary"
                 android:layout_marginLeft="2dp"
                 android:fontFamily="@font/nunitbold"
                 android:textStyle="bold"
-                android:id="@+id/username"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="15dp"/>
