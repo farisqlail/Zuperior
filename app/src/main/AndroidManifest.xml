@@ -13,6 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SICAPIN">
         <activity
+            android:name=".Activity.artikel_kategori_pkn"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.artikel_kategori_ips"
+            android:exported="true" />
+        <activity
             android:name=".Activity.kat_artikel_mtk"
             android:exported="true" />
         <activity
