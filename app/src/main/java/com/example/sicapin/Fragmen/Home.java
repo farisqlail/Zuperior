@@ -14,6 +14,8 @@ import android.widget.TextView;
 
 import com.example.sicapin.Activity.ArActivity;
 import com.example.sicapin.Activity.StartQuiz;
+import com.example.sicapin.LoginRegister.SessionAuth;
+import com.example.sicapin.MenuBottomNav.BottomNav;
 import com.example.sicapin.R;
 import com.example.sicapin.tes;
 import com.example.sicapin.onBoard;
@@ -26,6 +28,7 @@ public class Home extends Fragment {
     protected CardView cvArtikels, cvCameras, cvQuizs, cvProfiles;
     protected TextView username;
     protected LoginResponse loginResponse;
+    private SessionAuth sessionAuth;
 
     public Home() {
         // Required empty public constructor
@@ -43,15 +46,14 @@ public class Home extends Fragment {
         cvCameras  = (CardView) view.findViewById(R.id.cvCamera);
         cvProfiles = (CardView) view.findViewById(R.id.cvProfile);
         cvQuizs    = (CardView) view.findViewById(R.id.cvQuiz);
-        username = (TextView) view.findViewById(R.id.txtUsername);
         //EndFindViews
 
-        Intent intent = new Intent();
+        username = (TextView) view.findViewById(R.id.dataUsername);
+//        System.out.println(sessionAuth.getusename());
+        sessionAuth = new SessionAuth(getContext().getApplicationContext());
+//        System.out.println(sessionAuth.getusename());
+        username.setText(sessionAuth.getusename());
 
-        if (intent.getExtras() != null){
-            String passedUsername = intent.getStringExtra("data");
-            username.setText(passedUsername);
-        }
 
         //Listener
 

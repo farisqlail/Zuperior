@@ -8,6 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class InitRetrofit {
 
     private static final String URL = "https://zuperior-backend-rest-api.herokuapp.com/api/v1/";
+    private static Retrofit retrofit = null;
 
     public static Retrofit setInit(){
 
@@ -28,5 +29,13 @@ public class InitRetrofit {
         ApiInterface apiInterface = setInit().create(ApiInterface.class);
 
         return apiInterface;
+    }
+
+    public static Retrofit getClient(){
+        if (retrofit == null) {
+            retrofit = new Retrofit.Builder().baseUrl(URL).addConverterFactory(GsonConverterFactory.create()).build();
+        }
+
+        return retrofit;
     }
 }

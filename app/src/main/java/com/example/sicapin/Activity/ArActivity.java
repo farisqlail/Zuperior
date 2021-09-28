@@ -13,7 +13,7 @@ public class ArActivity extends AppCompatActivity {
 
     WebView webView;
     WebSettings webSettings;
-    String MODEL_URL="https://novelfaris.000webhostapp.com/story/arView.html";
+    String MODEL_URL="https://sketchfab.com/models/0a7cb290616442c88f89107d9a11f8f0/embed?autostart=1";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
