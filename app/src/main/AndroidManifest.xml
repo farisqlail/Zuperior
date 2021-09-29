@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SICAPIN">
         <activity
-            android:name=".MainActivity"
+            android:name=".Activity.artikel_kategori_mtk"
             android:exported="true" />
         <activity
             android:name=".Activity.artikel_kategori_seni"
@@ -60,7 +60,7 @@
             android:name=".LoginRegister.LoginActivity"
             android:exported="true" />
         <activity
-            android:name=".Activity.artikel_kategori_mtk"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
