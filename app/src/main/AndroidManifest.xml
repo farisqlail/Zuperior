@@ -13,10 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SICAPIN">
         <activity
-            android:name=".MainActivity"
+            android:name=".Activity.artikel_kategori_seni"
             android:exported="true" />
         <activity
-            android:name=".Activity.artikel_kategori_ips"
+            android:name=".MainActivity"
             android:exported="true" />
         <activity
             android:name=".Activity.kat_artikel_mtk"
@@ -60,7 +60,7 @@
             android:name=".LoginRegister.LoginActivity"
             android:exported="true" />
         <activity
-            android:name=".Activity.artikel_kategori_seni"
+            android:name=".Activity.artikel_kategori_ips"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
