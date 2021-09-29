@@ -13,12 +13,12 @@ import androidx.annotation.NonNull;
 
 import com.example.sicapin.R;
 
-public class item_artikel_kat_seni extends ArrayAdapter {
+public class item_artikel_kat_pkn extends ArrayAdapter {
 
     private Activity context;
     private String[]  tv_lv ;
     private Integer[] ic_lv ;
-    public item_artikel_kat_seni(@NonNull Activity context, String[] tv_lv, Integer[] ic_lv) {
+    public item_artikel_kat_pkn(@NonNull Activity context, String[] tv_lv, Integer[] ic_lv) {
         super(context, R.layout.lv_item_kat_artikel, tv_lv);
 
         this.context = context;

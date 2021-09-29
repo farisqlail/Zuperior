@@ -16,7 +16,7 @@
             android:name=".Activity.artikel_kategori_mtk"
             android:exported="true" />
         <activity
-            android:name=".Activity.artikel_kategori_seni"
+            android:name=".Activity.artikel_kategori_pkn"
             android:exported="true" />
         <activity
             android:name=".Activity.artikel_kategori_ips"

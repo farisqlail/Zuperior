@@ -11,6 +11,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.sicapin.Activity.artikel_kategori;
+import com.example.sicapin.Activity.artikel_kategori_ips;
+import com.example.sicapin.Activity.artikel_kategori_mtk;
+import com.example.sicapin.Activity.artikel_kategori_pkn;
 import com.example.sicapin.R;
 import com.example.sicapin.tes;
 
@@ -84,7 +87,7 @@ public class BacaArtikel extends Fragment {
         cv_ipsa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity().getApplicationContext(), tes.class);
+                Intent intent = new Intent(getActivity().getApplicationContext(), artikel_kategori_ips.class);
                 startActivity(intent);
             }
         });
@@ -102,7 +105,7 @@ public class BacaArtikel extends Fragment {
         cv_mtka.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity().getApplicationContext(), tes.class);
+                Intent intent = new Intent(getActivity().getApplicationContext(), artikel_kategori_mtk.class);
                 startActivity(intent);
             }
         });
@@ -111,7 +114,7 @@ public class BacaArtikel extends Fragment {
         cv_pkna.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity().getApplicationContext(), tes.class);
+                Intent intent = new Intent(getActivity().getApplicationContext(), artikel_kategori_pkn.class);
                 startActivity(intent);
             }
         });

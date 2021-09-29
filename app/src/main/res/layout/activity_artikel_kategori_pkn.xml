@@ -33,7 +33,7 @@
             android:layout_marginLeft="27dp"
             android:layout_marginTop="40dp"
             android:fontFamily="@font/nunitbold"
-            android:text="Seni Budaya"
+            android:text="Pendidikan Kewarganegaraan"
             android:textColor="@color/primary"
             android:textSize="18dp"
             android:textStyle="bold" />
