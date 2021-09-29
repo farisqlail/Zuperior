@@ -49,10 +49,10 @@ public class Home extends Fragment {
         //EndFindViews
 
         username = (TextView) view.findViewById(R.id.dataUsername);
-//        System.out.println(sessionAuth.getusename());
         sessionAuth = new SessionAuth(getContext().getApplicationContext());
-//        System.out.println(sessionAuth.getusename());
         username.setText(sessionAuth.getusename());
+//        System.out.println(sessionAuth.getusename());
+
 
 
         //Listener
